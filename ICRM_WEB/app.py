@@ -15,11 +15,11 @@
 import web
 
 urls = (
-    '/index.html'
+    '/index'
 )
 
 app = web.application(urls, globals())
 
 class index:
     def GET(self):
-        return 'index metmod'
+        return 'index'
