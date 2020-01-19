@@ -1,9 +1,9 @@
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__) # Store the main app
 
 @app.route("/") #  "@" = (Decorator) it's object, use under function 
-def home():
-    return "U are Hello?"
+def index():
+    return render_template("index.html")
 
 @app.route("/test")
 def test():
