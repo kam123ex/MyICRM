@@ -9,6 +9,5 @@ def index():
 def test():
     return "This is test"
     
-
 if __name__ == "__main__":
     app.run()
