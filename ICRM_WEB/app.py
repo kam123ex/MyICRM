@@ -3,7 +3,7 @@ app = Flask(__name__) # Store the main app
 
 @app.route("/") #  "@" = (Decorator) it's object, use under function 
 def home():
-    return "Hello FL"
+    return "U are Hello?"
 
 @app.route("/test")
 def test():
