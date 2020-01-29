@@ -5,8 +5,11 @@ if(process.env.NODE_ENV !== "production") {
 const express = require("express");
 const app = express();
 const expressLayouts = require("express-ejs-layouts")
+const bodyParser = require("body-parser");
+
 const indexRouter = require('./routes/index')
-// var bodyParser = require("body-parser");
+const authorRouter = require("./routes/authors")
+
 // var cookieParser = require("cookie-parser");
 // var util = require("util");
 // var fs = require('fs');
@@ -26,8 +29,10 @@ db.once("open", () => console.log("Connected to Mongoose"))
 
 app.use(expressLayouts)
 app.use(express.static("public"))
+app.use(bodyParser.urlencoded({ limit: "10mb", extended: false}))
 
 app.use("/", indexRouter)
+app.use("/authors", authorRouter)
 // app.get("/", (req, res) => {
 //   res.render("index.ejs", { name: "kam" })
 // })
