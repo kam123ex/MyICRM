@@ -14,7 +14,7 @@ const bookSchema = new mongoose.Schema({
         type: Date,
         required: true
     }, 
-    pageCont: {
+    pageCount: {
         type: Number,
         required: true
     }, 
