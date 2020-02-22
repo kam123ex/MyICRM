@@ -1,0 +1,99 @@
+<html>
+  <head> 
+
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+      <title>ICRM System | Sign Up</title>
+  </head>
+
+  <body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Sing In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <form id="login" class="input-group">
+                <div class="textBox">
+                    <input type="text" class="input-field" placeholder="Email">
+                </div>
+                <div class="textBox">
+                    <input type="password" class="input-field" placeholder="Password">
+                </div>
+                <div class="button">
+                    <button type="submit" class="submit-btn">Log in</button>
+                </div>
+            </form>
+
+            <form id="register" class="input-group">
+                <div>
+                    <input type="text" class="input-field" placeholder="User Name">
+                    <input type="text" class="input-field" placeholder="Email">
+                    <input type="password" class="input-field" placeholder="Password">
+                    <input type="password" class="input-field" placeholder="Confirm Password">
+                </div>
+
+                <div class="input-radio">
+                    <input type="radio" value="m" name="gender" checked > Male
+                    <input type="radio" value="f" name="gender" > Female              
+                </div>
+                
+                <div class="button">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+
+    function register() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";        
+    }
+    function login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";        
+    }
+
+</script>
+
+<!-- 
+
+
+    <div class="container">
+        <div class="signUp-box">
+            <div class="title">SIGN UP ACCOUNT</div>
+            <div class="row">
+                <div class="col">
+                    <div class="textBoxTop">
+                        <input type="text" placeholder="LastName">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="textBoxTop">
+                        <input type="text" placeholder="FirstName">
+                    </div>
+                </div>
+            </div>
+            <div class="textBox">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="textBox">
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="textBox">
+                <input type="password" placeholder="Conform Password">
+            </div>
+            <div class="button">
+                <input type="button" value="SIGN IN">
+            </div>
+        </div>
+    </div> -->
+  </body>
+</html>

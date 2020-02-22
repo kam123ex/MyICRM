@@ -10,6 +10,7 @@ const bodyParser = require("body-parser");
 const indexRouter = require('./routes/index')
 const authorRouter = require("./routes/authors")
 const bookRouter = require("./routes/books")
+const userRouter = require("./routes/users")
 // var cookieParser = require("cookie-parser");
 // var util = require("util");
 // var fs = require('fs');
@@ -36,6 +37,7 @@ app.use(bodyParser.urlencoded({ limit: "10mb", extended: false}))
 app.use("/", indexRouter)
 app.use("/authors", authorRouter)
 app.use("/books", bookRouter)
+app.use("/users", userRouter)
 // app.get("/", (req, res) => {
 //   res.render("index.ejs", { name: "kam" })
 // })

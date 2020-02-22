@@ -1,0 +1,92 @@
+.hero{
+    height: 100%;
+    width: 100%;
+}
+
+.form-box{
+    height: 480px;
+    width: 380px;
+    position: relative;
+    margin: 6% auto;
+    padding: 5px;
+    border-right: 4px solid #999;
+    border-bottom: 4px solid #999;
+    border-color:  #11ffdd;  
+    border-radius: 20px;  
+    overflow: hidden;
+}
+
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 5px 4px 20px 5px #11ffdd;
+    border-radius: 30px;    
+}
+
+.toggle-btn{
+    padding:10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #b621fe, #11ffdd);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.input-radio{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(170deg, #b621fe, #11ffdd);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+#login{
+    left: 50px;
+}
+
+#register{
+    left: 450px;
+}
