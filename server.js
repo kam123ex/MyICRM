@@ -6,6 +6,7 @@ const express = require("express");
 const app = express();
 const expressLayouts = require("express-ejs-layouts")
 const bodyParser = require("body-parser");
+const methodOverride = require("method-override")
 
 const indexRouter = require('./routes/index')
 const authorRouter = require("./routes/authors")
@@ -31,6 +32,7 @@ db.on("error", error => console.error(error))
 db.once("open", () => console.log("Connected to Mongoose"))
 
 app.use(expressLayouts)
+app.use(methodOverride("_method"))
 app.use(express.static("public"))
 app.use(bodyParser.urlencoded({ limit: "10mb", extended: false}))
 
