@@ -6,19 +6,19 @@
     </div>
     <div>
         <label>Published After</label>
-        <input type="date" name="publishedAfter" value="<%= 
-        searchOptions.publishedAfter %>">
+        <input type="date" name="publishedAfter" value="<%= searchOptions.publishedAfter %>">
     </div>
     <div>
         <label>Published Before</label>
-        <input type="date" name="publishedBefore" value="<%= 
-        searchOptions.publishedBefore %>">
+        <input type="date" name="publishedBefore" value="<%= searchOptions.publishedBefore %>">
     </div>
     <button type="submit">Search</button>
 </form>
 <div>
-    <% books.forEach( book => { %>
+    <% books.forEach(book => { %>
+        <a href="/books/<%= book.id %>">
         <img src="<%= book.coverImagePath %>" width="100" height="150">
+        </a>
     <% }) %>
 </div>
 
